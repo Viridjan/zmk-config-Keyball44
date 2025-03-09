@@ -53,72 +53,51 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "QWRT";
+            label = "QWERT";
             bindings = <
-&kp ESCAPE      &kp Q     &kp W         &kp E        &kp R      &kp T                 &kp Y            &kp U  &kp I      &kp O    &kp P      &kp BACKSPACE
-&kp LCTRL       &kp A     &kp S         &kp D        &kp F      &kp G                 &kp H            &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &kp Z     &kp X         &kp C        &kp V      &kp B                 &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
-&kp LGUI        &kp LALT  &lt 6 ESCAPE  &lt 4 SPACE  &lt 5 TAB             &kp ENTER  &lt 2 BACKSPACE                                        &kp DELETE
+&kp GRAVE     &kp Q           &kp W  &kp E      &kp R  &kp T             &kp Y      &kp U  &kp I  &kp O      &kp P       &kp BACKSPACE
+&kp LCTRL     &kp A           &kp S  &kp D      &kp F  &kp G             &kp H      &kp J  &kp K  &kp L      &kp SEMI    &kp APOS
+&kp LEFT_ALT  &kp LEFT_SHIFT  &kp Z  &kp X      &kp C  &kp V             &kp B      &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp FSLH
+&kp LGUI      &kp TAB         &mo 2  &mkp LCLK  &mo 3             &mo 4  &kp SPACE                                       &tog 1
+            >;
+        };
+
+        COLEMAK {
+            label = "colemak";
+            bindings = <
+&kp GRAVE     &kp Q           &kp W  &kp F      &kp P  &kp G             &kp J      &kp L  &kp U  &kp Y      &kp SEMI    &kp BACKSPACE
+&kp LCTRL     &kp A           &kp R  &kp S      &kp T  &kp D             &kp H      &kp N  &kp E  &kp I      &kp O       &kp APOS
+&kp LEFT_ALT  &kp LEFT_SHIFT  &kp Z  &kp X      &kp C  &kp V             &kp B      &kp K  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LGUI      &kp TAB         &mo 2  &mkp LCLK  &mo 3             &mo 4  &kp SPACE                                       &tog 1
             >;
         };
 
         number_layer {
-            label = "NUM";
+            label = "num";
             bindings = <
-&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5              &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
-&none   &kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT     &none                     &none         &none         &none         &none         &none         &none
-&none   &none         &none         &none         &none         &none                     &none         &none         &trans        &trans        &none         &none
-&trans  &trans        &trans        &trans        &trans                          &trans  &trans                                                                &trans
-            >;
-        };
-
-        symbol_layer {
-            label = "SYM";
-            bindings = <
-&none   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT              &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&none   &bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans                   &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp SQT                &none
-&none   &trans           &trans        &trans        &trans        &trans                   &kp UNDERSCORE  &kp PLUS       &trans            &trans                &kp NON_US_BACKSLASH   &none
-&trans  &trans           &trans        &trans        &trans                         &trans  &trans                                                                                        &trans
+&kp ESCAPE     &trans  &kp N7  &kp N8     &kp N9  &kp N0                 &trans   &trans          &msc SCRL_UP    &trans           &trans  &kp DEL
+&trans         &trans  &kp N4  &kp N5     &kp N6  &kp MINUS              &trans   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
+&kp RIGHT_ALT  &trans  &kp N1  &kp N2     &kp N3  &kp EQUAL              &trans   &trans          &trans          &trans           &trans  &trans
+&trans         &trans  &trans  &mkp RCLK  &trans                 &trans  &kp RET                                                           &trans
             >;
         };
 
         function_layer {
-            label = "FUN";
+            label = "FN";
             bindings = <
-&none   &kp F1  &kp F2   &kp F3   &kp F4   &none              &none  &none  &none  &none  &none  &none
-&none   &kp F5  &kp F6   &kp F7   &kp F8   &none              &none  &none  &none  &none  &none  &none
-&none   &kp F9  &kp F10  &kp F11  &kp F12  &none              &none  &none  &none  &none  &none  &none
-&trans  &trans  &trans   &trans   &trans              &trans  &mo 3                              &trans
+&kp ESC        &kp F1  &kp F2  &kp F3     &kp F4   &kp F5               &trans   &trans  &trans  &trans  &trans  &kp DEL
+&trans         &kp F6  &kp F7  &kp F8     &kp F9   &kp F10              &trans   &trans  &trans  &trans  &trans  &trans
+&kp RIGHT_ALT  &trans  &trans  &trans     &kp F11  &kp F12              &trans   &trans  &trans  &trans  &trans  &trans
+&trans         &trans  &trans  &mkp RCLK  &trans                &trans  &kp RET                                  &trans
             >;
         };
 
-        mouse_layer {
-            label = "MOUSE";
+        explore_layer {
             bindings = <
-&none   &kp N1          &kp N2          &kp N3        &kp N4     &kp N5              &kp N6         &kp N7     &kp N8  &kp N9     &kp N0     &none
-&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none               &kp PAGE_UP    &mkp LCLK  &none   &mkp RCLK  &mkp MCLK  &none
-&none   &none           &none           &none         &none      &none               &kp PAGE_DOWN  &none      &none   &none      &none      &none
-&trans  &trans          &trans          &trans        &trans                 &trans  &trans                                                  &none
-            >;
-        };
-
-        scroll_layer {
-            label = "SCROLL";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
-            >;
-        };
-
-        snipe_layer {
-            label = "SNIPE";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&kp ESCAPE  &trans  &trans  &trans     &trans  &trans              &kp PG_UP  &trans          &kp UP_ARROW    &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp DEL
+&trans      &trans  &trans  &trans     &trans  &trans              &kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&trans      &trans  &trans  &trans     &trans  &trans              &trans     &trans          &trans          &kp C_PREV       &kp C_PLAY_PAUSE   &kp C_NEXT
+&trans      &trans  &trans  &mkp RCLK  &trans              &trans  &kp RET                                                                        &trans
             >;
         };
     };
