@@ -61,7 +61,7 @@
         };
 
         COLEMAK {
-            label = "colemak";
+            label = "COLEMAK";
             bindings = <
 &kp GRAVE     &kp Q           &kp W  &kp F      &kp P  &kp G             &kp J      &kp L  &kp U  &kp Y      &kp SEMI    &kp BACKSPACE
 &kp LCTRL     &kp A           &kp R  &kp S      &kp T  &kp D             &kp H      &kp N  &kp E  &kp I      &kp O       &kp APOS
@@ -71,7 +71,7 @@
         };
 
         number_layer {
-            label = "num";
+            label = "NUM";
             bindings = <
 &kp ESCAPE     &trans  &kp N7  &kp N8     &kp N9  &kp N0                 &trans   &trans          &msc SCRL_UP    &trans           &trans  &kp DEL
 &trans         &trans  &kp N4  &kp N5     &kp N6  &kp MINUS              &trans   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
@@ -81,7 +81,7 @@
         };
 
         function_layer {
-            label = "FN";
+            label = "FUN";
             bindings = <
 &kp ESC        &kp F1  &kp F2  &kp F3     &kp F4   &kp F5               &trans   &trans  &trans  &trans  &trans  &kp DEL
 &trans         &kp F6  &kp F7  &kp F8     &kp F9   &kp F10              &trans   &trans  &trans  &trans  &trans  &trans
@@ -91,6 +91,7 @@
         };
 
         explore_layer {
+            label = "EXP";
             bindings = <
 &kp ESCAPE  &trans  &trans  &trans     &trans  &trans              &kp PG_UP  &trans          &kp UP_ARROW    &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp DEL
 &trans      &trans  &trans  &trans     &trans  &trans              &kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
