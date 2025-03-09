@@ -3,6 +3,7 @@
 #define NUM     2
 #define FUN     3
 #define EXP     4
+#define MOUSE   5
 
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
@@ -60,7 +61,7 @@
             >;
         };
 
-        COLEMAK {
+        colemak_layer {
             label = "COLEMAK";
             bindings = <
 &kp GRAVE     &kp Q           &kp W  &kp F      &kp P  &kp G             &kp J      &kp L  &kp U  &kp Y      &kp SEMI    &kp BACKSPACE
@@ -97,6 +98,16 @@
 &trans      &trans  &trans  &trans     &trans  &trans              &kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
 &trans      &trans  &trans  &trans     &trans  &trans              &trans     &trans          &trans          &kp C_PREV       &kp C_PLAY_PAUSE   &kp C_NEXT
 &trans      &trans  &trans  &mkp LCLK  &trans              &trans  &kp RET                                                                        &trans
+            >;
+        };
+
+        mouse_layer {
+            label = "MOUSE";
+            bindings = <
+&kp ESCAPE  &trans  &trans  &trans     &trans  &trans              &trans  &trans  &trans  &trans  &trans  &kp DEL
+&trans      &trans  &trans  &trans     &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans     &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &mkp LCLK  &trans              &trans  &trans                                  &trans
             >;
         };
     };
