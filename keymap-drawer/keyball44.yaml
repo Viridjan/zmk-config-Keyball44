@@ -224,4 +224,4 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&AML_TO'
