@@ -2,7 +2,7 @@
 #define COLEMAK 1
 #define FUN     2
 #define EXP     3
-#define MOUSE   4
+#define MOUSE   1
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
