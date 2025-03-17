@@ -39,7 +39,7 @@ layers:
   - {t: /, s: '?'}
   - LGUI
   - $$mdi:keyboard-tab$$
-  - QWERT
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - FUN
   - $$mdi:mouse-left-click-outline$$
   - EXP
