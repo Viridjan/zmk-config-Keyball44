@@ -94,7 +94,7 @@
             >;
         };
 
-        reset {
+        reset_layer {
             bindings = <
 &trans       &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
