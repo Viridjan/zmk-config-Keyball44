@@ -1,9 +1,8 @@
 #define DEFAULT 0
 #define COLEMAK 1
-#define NUM     2
-#define FUN     3
-#define EXP     4
-#define MOUSE   5
+#define FUN     2
+#define EXP     3
+#define MOUSE   4
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
