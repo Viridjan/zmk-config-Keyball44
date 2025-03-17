@@ -42,7 +42,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - FUNC
   - $$mdi:mouse-left-click-outline$$
-  - MOUSE
+  - EXP
   - $$mdi:keyboard-space$$
   - {t: COLEMAK, h: toggle}
   COLEMAK:
@@ -222,6 +222,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
