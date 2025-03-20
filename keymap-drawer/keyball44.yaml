@@ -82,9 +82,9 @@ layers:
   - {t: ',', s: <}
   - .
   - {t: /, s: '?'}
-  - LGUI
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-tab$$
-  - QWERT
+  - $$mdi:apple-keyboard-command$$
   - FUNC
   - $$mdi:mouse-left-click-outline$$
   - EXP
@@ -171,7 +171,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-previous$$
   - PLAY PAUSE
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -179,7 +179,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {type: held}
   - reset
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:transfer$$', type: trans}
   reset:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
