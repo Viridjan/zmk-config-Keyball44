@@ -57,10 +57,10 @@
         colemak_layer {
             label = "COLEMAK";
             bindings = <
-&kp GRAVE     &kp Q           &kp W  &kp F  &kp P      &kp G             &kp J      &kp L  &kp U  &kp Y      &kp SEMI    &kp BACKSPACE
-&kp LCTRL     &kp A           &kp R  &kp S  &kp T      &kp D             &kp H      &kp N  &kp E  &kp I      &kp O       &kp APOS
-&kp LEFT_ALT  &kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V             &kp B      &kp K  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LGUI      &kp TAB         &mo 0  &mo 2  &mkp LCLK             &mo 3  &kp SPACE                                       &tog 1
+&kp GRAVE     &kp Q           &kp W         &kp F  &kp P      &kp G             &kp J      &kp L  &kp U  &kp Y      &kp SEMI    &kp BACKSPACE
+&kp LCTRL     &kp A           &kp R         &kp S  &kp T      &kp D             &kp H      &kp N  &kp E  &kp I      &kp O       &kp APOS
+&kp LEFT_ALT  &kp LEFT_SHIFT  &kp Z         &kp X  &kp C      &kp V             &kp B      &kp K  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&none         &kp TAB         &kp LEFT_GUI  &mo 2  &mkp LCLK             &mo 3  &kp SPACE                                       &tog 1
             >;
         };
 
@@ -79,8 +79,8 @@
             bindings = <
 &kp ESCAPE  &trans  &trans          &msc SCRL_UP    &trans           &trans              &kp PG_UP  &trans          &kp UP_ARROW    &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp DEL
 &trans      &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans              &kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-&trans      &trans  &trans          &trans          &trans           &trans              &trans     &trans          &trans          &kp C_PREV       &kp C_PLAY_PAUSE   &trans
-&trans      &trans  &trans          &trans          &mkp RCLK                    &trans  &mo 4                                                                          &bootloader
+&trans      &trans  &trans          &trans          &trans           &trans              &trans     &trans          &trans          &kp C_PREV       &kp C_PLAY_PAUSE   &kp C_NEXT
+&trans      &trans  &trans          &trans          &mkp RCLK                    &trans  &mo 4                                                                          &trans
             >;
         };
 
