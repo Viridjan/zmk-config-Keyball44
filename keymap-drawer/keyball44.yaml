@@ -361,24 +361,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
-- p: [9, 24]
-  k: '{'
-  l: [SYM]
-- p: [24, 10]
-  k: '}'
-  l: [SYM]
-- p: [25, 24, 9]
-  k: <
-  l: [SYM]
-- p: [25, 24, 10]
-  k: '>'
-  l: [SYM]
 - p: [19, 20]
   k: $$mdi:mouse-left-click-outline$$
-  l: [Colemak DH, NUM]
+  l: [QWERT]
 - p: [20, 21]
   k: $$mdi:mouse-right-click-outline$$
-  l: [Colemak DH, NUM]
+  l: [QWERT]
 - p: [21, 22]
   k: $$mdi:mouse-scroll-wheel$$
-  l: [Colemak DH, NUM]
+  l: [QWERT]
