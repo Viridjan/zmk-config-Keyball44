@@ -136,30 +136,30 @@
         default_layer {
             label = "Colemak";
             bindings = <
-&kp GRAVE  &kp Q       &kp W       &kp F        &kp P         &kp G                      &kp J   &kp L         &kp U        &kp Y       &kp_pc      &kp BACKSPACE
-&kp LCTRL  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp D                      &kp H   &mt LSHIFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O  &kp APOS
-&kp LALT   &kp LSHIFT  &kp Z       &kp X        &kp C         &kp V                      &kp B   &kp K         &kp M        &kp_cs      &kp_pc      &kp_eq
-                       &none       &kp TAB      &kp LEFT_GUI  &mo SYM  &mkp LCLK    &mo EXP  &td_sn                                         &to QWERT
+&kp GRAVE  &kp Q       &kp W       &kp F        &kp P        &kp G                      &kp J   &kp L        &kp U        &kp Y       &kp_pc      &kp BACKSPACE
+&kp LCTRL  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp D                      &kp H   &mt LSHFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O  &kp APOS
+&kp LALT   &kp LSHFT   &kp Z       &kp X        &kp C        &kp V                      &kp B   &kp K        &kp M        &kp_cs      &kp_pc      &kp_eq
+                       &none       &kp TAB      &kp LGUI     &mo SYM  &none    &mo EXP  &td_sn                                        &to QWERT
             >;
         };
 
         qwert_layer {
             label = "QWERT";
             bindings = <
-&kp ESC  &kp Q       &kp W   &kp E   &kp R   &kp T                         &kp Y   &kp U         &kp I        &kp O       &kp P          &kp BACKSPACE
-&kp LCTRL  &kp A       &kp S   &kp D   &kp F   &kp G                      &kp H   &kp J  &kp K  &kp L  &kp SEMI  &kp APOS
-&kp LALT   &kp LSHIFT  &kp Z   &kp X   &kp C   &kp V                      &kp B   &kp N         &kp M        &kp_cs      &kp_pc     &kp_eq
-                       &none       &kp TAB      &kp LEFT_GUI  &mo SYM  &kp SPACE    &mo EXP  &td_sn                                         &to COLEMAK
+&kp ESC    &kp Q      &kp W   &kp E    &kp R     &kp T                          &kp Y   &kp U  &kp I  &kp O   &kp P        &kp BACKSPACE
+&kp LCTRL  &kp A      &kp S   &kp D    &kp F     &kp G                          &kp H   &kp J  &kp K  &kp L   &kp SEMI     &kp APOS
+&kp LALT   &kp LSHFT  &kp Z   &kp X    &kp C     &kp V                          &kp B   &kp N  &kp M  &kp_cs  &kp_pc       &kp_eq
+                      &none   &kp TAB  &kp LGUI  &mo SYM  &kp SPACE    &mo EXP  &td_sn                        &to COLEMAK
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&trans    &none   &none   &none   &none   &none                        &none    &kp N7  &kp N8  &kp N9  &kp MINUS  &kp DEL
-&trans    &none   &none   &none   &none   &none                        &none    &kp N4  &kp N5  &kp N6  &kp N0     &none
-&kp RALT  &trans  &none   &none   &none   &none                        &kp_pm   &kp N1  &kp N2  &kp N3  &kp EQUAL  &none
-                  &trans  &trans  &trans  &trans  &mkp RCLK    &trans  &kp RET                          &none
+&trans    &none   &none   &none   &none   &none                    &none    &kp N7  &kp N8  &kp N9  &kp MINUS  &kp DEL
+&trans    &none   &none   &none   &none   &none                    &none    &kp N4  &kp N5  &kp N6  &kp N0     &none
+&kp RALT  &trans  &none   &none   &none   &none                    &kp_pm   &kp N1  &kp N2  &kp N3  &kp EQUAL  &none
+                  &trans  &trans  &trans  &trans  &none    &trans  &none                            &none
             >;
         };
 
