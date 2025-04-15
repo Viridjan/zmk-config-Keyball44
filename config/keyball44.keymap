@@ -170,10 +170,10 @@
         default_layer {
             label = "QWERT";
             bindings = <
-&kp GRAVE  &kp Q       &kp W       &kp E        &kp R         &kp T                      &kp Y   &kp U         &kp I        &kp O       &kp P          &kp BACKSPACE
-&kp LCTRL  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F  &kp G                      &kp H   &mt LSHIFT J  &mt LCTRL K  &mt LALT L  &mt LGUI SEMI  &kp APOS
-&kp LALT   &kp LSHIFT  &kp Z       &kp X        &kp C         &kp V                      &kp B   &kp N         &kp M        &kp COMMA   &kp PERIOD     &kp_eq
-                       &none       &kp TAB      &kp LEFT_GUI  &mo 3  &mkp LCLK    &mo 4  &td_sn                                         &td_cg
+&kp GRAVE  &kp Q       &kp W       &kp F        &kp P         &kp G                     &kp J   &kp L         &kp U        &kp Y       &kp_pc      &kp BACKSPACE
+&kp LCTRL  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp D                     &kp H   &mt LSHIFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O  &kp APOS
+&kp LALT  &kp LSHIFT      &kp Z       &kp X        &kp C         &kp V                     &kp B   &kp K         &kp M        &kp COMMA   &kp_cs           &kp_eq
+                    &none       &kp TAB      &kp LEFT_GUI  &mo 3  &mkp LCLK    &mo 4  &td_sn                                         &td_cg
             >;
         };
 
@@ -181,10 +181,10 @@
         colemak_layer {
             label = "Colemak DH";
             bindings = <
-&trans  &kp Q       &kp W       &kp F        &kp P         &kp G                     &kp J   &kp L         &kp U        &kp Y       &kp_pc      &trans
-&trans  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHIFT T  &kp D                     &kp H   &mt LSHIFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O  &trans
-&trans  &trans      &kp Z       &kp X        &kp C         &kp V                     &kp B   &kp K         &kp M        &trans      &kp_cs      &trans
-                    &none       &trans       &trans        &trans  &trans    &trans  &trans                                         &to 0
+&kp GRAVE  &kp Q       &kp W       &kp E        &kp R         &kp T                      &kp Y   &kp U         &kp I        &kp O       &kp P          &kp BACKSPACE
+&kp LCTRL  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F  &kp G                      &kp H   &mt LSHIFT J  &mt LCTRL K  &mt LALT L  &mt LGUI SEMI  &kp APOS
+&kp LALT   &kp LSHIFT  &kp Z       &kp X        &kp C         &kp V                      &kp B   &kp N         &kp M        &kp COMMA   &kp PERIOD     &kp_eq
+                       &none       &kp TAB      &kp LEFT_GUI  &mo 3  &mkp LCLK    &mo 4  &td_sn                                         &to 0
             >;
         };
 
