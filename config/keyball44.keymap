@@ -136,10 +136,10 @@
         default_layer {
             label = "Colemak";
             bindings = <
-&kp GRAVE  &kp Q       &kp W       &kp F        &kp P        &kp G                      &kp J   &kp L        &kp U        &kp Y       &kp_pc      &kp BACKSPACE
-&kp LCTRL  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp D                      &kp H   &mt LSHFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O  &kp APOS
-&kp LALT   &kp LSHFT   &kp Z       &kp X        &kp C        &kp V                      &kp B   &kp K        &kp M        &kp_cs      &kp_pc      &kp_eq
-                       &none       &kp TAB      &kp LGUI     &mo SYM  &none    &mo EXP  &td_sn                                        &to QWERT
+&none  &kp GRAVE   &kp W       &kp F        &kp P        &kp G                      &kp J   &kp L        &kp U        &kp Y       &kp BACKSPACE  &none
+&none  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp D                      &kp H   &mt LSHFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O     &kp APOS
+&none  &kp Q       &kp Z       &kp X        &kp C        &kp V                      &kp B   &kp K        &kp M        &kp_cs      &kp_pc         &kp_eq
+                   &none       &kp TAB      &kp LGUI     &mo SYM  &none    &mo EXP  &td_sn                                        &to QWERT
             >;
         };
 
@@ -166,17 +166,17 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp ESC   &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &none    &kp AMPS  &kp STAR   &kp_bL     &kp_bR  &kp DEL
-&trans    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &none    &kp DLLR  &kp PRCNT  &kp CARET  &none   &trans
-&kp RALT  &trans  &none   &none   &kp F11  &kp F12                    &none    &kp_eq    &kp AT     &kp POUND  &none   &kp_slsh
-                  &trans  &trans  &trans   &trans   &trans    &trans  &kp RET                                  &none
+&kp ESC   &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &none    &none  &none  &none  &none  &none  &kp DEL
+&trans    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &none    &none  &none  &none  &none  &none  &none
+&kp RALT  &trans  &none   &none   &kp F11  &kp F12                    &none    &none  &none  &none  &none  &none  &kp_slsh
+                  &trans  &trans  &trans   &trans   &trans    &trans  &kp RET                              &none
             >;
         };
 
         explore_layer {
             label = "EXP";
             bindings = <
-&kp ESC  &none   &none   &none   &none   &none                        &none     &none       &kp PG_UP     &kp PG_DN     &none       &kp DEL
+&kp ESC  &none   &none   &none   &none   &none                        &none     &none       &kp PG_DN     &kp PG_UP     &none       &kp DEL
 &trans   &none   &none   &none   &none   &none                        &none     &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT   &none
 &trans   &trans  &none   &none   &none   &none                        &kp C_PP  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &none
                  &trans  &trans  &trans  &trans  &mkp RCLK    &trans  &kp RET                                           &trans
