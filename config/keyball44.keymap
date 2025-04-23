@@ -136,10 +136,10 @@
         default_layer {
             label = "QWERT";
             bindings = <
-&kp grave    &kp Q      &kp W  &kp E    &kp R     &kp T                          &kp Y   &kp U  &kp I  &kp O   &kp P        &kp BACKSPACE
-&kp LCTRL  &mt LGUI A      &mt LALT S  &mt LCTRL D    &mt LSHFT F     &kp G                          &kp H   &mt LSHFT J  &mt LCTRL K  &mt LALT L   &mt LGUI SEMI     &kp APOS
-&kp LALT   &kp LSHFT  &kp Z  &kp X    &kp C     &kp V                          &kp B   &kp N  &kp M  &kp_cs  &kp_pc       &kp_eq
-                      &none  &kp TAB  &kp LGUI  &mo SYM  &kp SPACE    &mo EXP  &td_sn                        &to GAME
+&kp GRAVE  &kp Q       &kp W       &kp E        &kp R        &kp T                          &kp Y   &kp U        &kp I        &kp O       &kp P          &kp BACKSPACE
+&kp LCTRL  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G                          &kp H   &mt LSHFT J  &mt LCTRL K  &mt LALT L  &mt LGUI SEMI  &kp APOS
+&kp LALT   &kp LSHFT   &kp Z       &kp X        &kp C        &kp V                          &kp B   &kp N        &kp M        &kp_cs      &kp_pc         &kp_eq
+                       &none       &kp TAB      &kp LGUI     &mo SYM  &kp SPACE    &mo EXP  &td_sn                                        &to GAME
             >;
         };
 
