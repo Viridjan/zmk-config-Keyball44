@@ -136,7 +136,7 @@
         default_layer {
             label = "QWERT";
             bindings = <
-&kp GRAVE  &kp Q       &kp W       &kp E        &kp R        &kp T                          &kp Y   &kp U        &kp I        &kp O       &kp P          &kp BACKSPACE
+&kp GRAVE  &kp Q       &kp W       &kp E        &kp R        &kp T                          &kp Y   &kp U        &kp I        &kp O       &kp P          &kp BSPC
 &kp LCTRL  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G                          &kp H   &mt LSHFT J  &mt LCTRL K  &mt LALT L  &mt LGUI SEMI  &kp APOS
 &kp LALT   &kp LSHFT   &kp Z       &kp X        &kp C        &kp V                          &kp B   &kp N        &kp M        &kp_cs      &kp_pc         &kp_eq
                        &none       &kp TAB      &kp LGUI     &mo SYM  &kp SPACE    &mo EXP  &td_sn                                        &to GAME
@@ -146,9 +146,9 @@
         game_layer {
             label = "GAME";
             bindings = <
-&kp ESC    &kp Q      &kp W  &kp E    &kp R     &kp T                          &kp Y   &kp U  &kp I  &kp O   &kp P        &kp BACKSPACE
-&kp LCTRL  &kp A      &kp S  &kp D    &kp F     &kp G                          &kp H   &kp J  &kp K  &kp L   &kp SEMI     &kp APOS
-&kp LALT   &kp LSHFT  &kp Z  &kp X    &kp C     &kp V                          &kp B   &kp N  &kp M  &kp_cs  &kp_pc       &kp_eq
+&kp ESC    &kp Q      &kp W  &kp E    &kp R     &kp T                          &kp Y   &kp U  &kp I  &kp O   &kp P      &kp BACKSPACE
+&kp LCTRL  &kp A      &kp S  &kp D    &kp F     &kp G                          &kp H   &kp J  &kp K  &kp L   &kp SEMI   &kp APOS
+&kp LALT   &kp LSHFT  &kp Z  &kp X    &kp C     &kp V                          &kp B   &kp N  &kp M  &kp_cs  &kp_pc     &kp_eq
                       &none  &kp TAB  &kp LGUI  &mo SYM  &kp SPACE    &mo EXP  &td_sn                        &to QWERT
             >;
         };
@@ -166,10 +166,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp ESC   &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &none    &none  &none  &none  &none  &none  &kp DEL
-&trans    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &none    &none  &none  &none  &none  &none  &none
-&kp RALT  &trans  &none   &none   &kp F11  &kp F12                    &none    &none  &none  &none  &none  &none  &kp_slsh
-                  &trans  &trans  &trans   &trans   &trans    &trans  &kp RET                              &none
+&kp ESC  &kp F1  &kp F2    &kp F3  &kp F4    &kp F5                    &none    &none    &none  &none  &none   &none
+&kp DEL  &trans  &kp F6    &kp F7  &kp F8    &kp F9                    &kp F10  &none    &none  &none  &none   &none
+&none    &none   &kp RALT  &trans  &none     &none                     &kp F11  &kp F12  &none  &none  &none   &none
+                 &none     &none   &kp_slsh  &trans  &trans    &trans  &trans                          &trans
             >;
         };
 
