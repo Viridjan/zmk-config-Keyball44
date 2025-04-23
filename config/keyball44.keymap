@@ -1,9 +1,9 @@
-#define COLEMAK 0
-#define QWERT   1
-#define NUM     2
-#define SYM     3
-#define EXP     4
-#define RESET   5
+#define QWERT  0
+#define GAME   1
+#define NUM    2
+#define SYM    3
+#define EXP    4
+#define RESET  5
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
@@ -134,24 +134,27 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "Colemak";
+            label = "QWERT";
             bindings = <
-&none  &kp GRAVE   &kp W       &kp F        &kp P        &kp G                      &kp J   &kp L        &kp U        &kp Y       &kp BACKSPACE  &none
-&none  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp D                      &kp H   &mt LSHFT N  &mt LCTRL E  &mt LALT I  &mt LGUI O     &kp APOS
-&none  &kp Q       &kp Z       &kp X        &kp C        &kp V                      &kp B   &kp K        &kp M        &kp_cs      &kp_pc         &kp_eq
-                   &none       &kp TAB      &kp LGUI     &mo SYM  &none    &mo EXP  &td_sn                                        &to QWERT
+&kp grave    &kp Q      &kp W  &kp E    &kp R     &kp T                          &kp Y   &kp U  &kp I  &kp O   &kp P        &kp BACKSPACE
+&kp LCTRL  &mt LGUI A      &mt LALT S  &mt LCTRL D    &mt LSHFT F     &kp G                          &kp H   &mt LSHFT J  &mt LCTRL K  &mt LALT L   &mt LGUI SEMI     &kp APOS
+&kp LALT   &kp LSHFT  &kp Z  &kp X    &kp C     &kp V                          &kp B   &kp N  &kp M  &kp_cs  &kp_pc       &kp_eq
+                      &none  &kp TAB  &kp LGUI  &mo SYM  &kp SPACE    &mo EXP  &td_sn                        &to GAME
             >;
         };
 
         qwert_layer {
-            label = "QWERT";
+            label = "GAME";
             bindings = <
 &kp ESC    &kp Q      &kp W  &kp E    &kp R     &kp T                          &kp Y   &kp U  &kp I  &kp O   &kp P        &kp BACKSPACE
 &kp LCTRL  &kp A      &kp S  &kp D    &kp F     &kp G                          &kp H   &kp J  &kp K  &kp L   &kp SEMI     &kp APOS
 &kp LALT   &kp LSHFT  &kp Z  &kp X    &kp C     &kp V                          &kp B   &kp N  &kp M  &kp_cs  &kp_pc       &kp_eq
-                      &none  &kp TAB  &kp LGUI  &mo SYM  &kp SPACE    &mo EXP  &td_sn                        &to COLEMAK
+                      &none  &kp TAB  &kp LGUI  &mo SYM  &kp SPACE    &mo EXP  &td_sn                        &to QWERT
             >;
         };
+
+
+
 
         number_layer {
             label = "NUM";
