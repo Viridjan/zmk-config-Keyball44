@@ -131,7 +131,7 @@
 
         alt_f4 {
             bindings = <&kp LA(F4)>;
-            key-positions = <24 3>;
+            key-positions = <24 4>;
             layers = <3>;
         };
     };
