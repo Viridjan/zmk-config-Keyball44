@@ -128,12 +128,6 @@
             key-positions = <21 22>;
             layers = <QWERT>;
         };
-
-        alt_f4 {
-            bindings = <&kp LA(F4)>;
-            key-positions = <24 4>;
-            layers = <3>;
-        };
     };
 
     keymap {
@@ -172,10 +166,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp ESC   &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                    &none    &none  &none  &kp LBKT  &kp RBKT  &kp DEL
-&trans    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10                   &none    &none  &none  &kp_bL    &kp_bR    &none
-&kp RALT  &trans  &none   &none   &kp F11  &kp F12                   &none    &none  &none  &none     &kp_slsh  &none
-                  &trans  &trans  &trans   &trans   &none    &trans  &kp RET                          &none
+&kp ESC  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                    &none    &none  &none  &kp LBKT  &kp RBKT  &kp DEL
+&trans   &kp F6  &kp F7  &kp F8  &kp F9   &kp F10                   &none    &none  &none  &kp_bL    &kp_bR    &none
+&trans   &trans  &none   &none   &kp F11  &kp F12                   &none    &none  &none  &none     &kp_slsh  &none
+                 &trans  &trans  &trans   &trans   &none    &trans  &kp RET                          &none
             >;
         };
 
