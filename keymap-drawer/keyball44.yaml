@@ -280,6 +280,6 @@ combos:
 - p: [21, 22]
   k: $$mdi:mouse-scroll-wheel$$
   l: [QWERT]
-- p: [24, 3]
+- p: [24, 4]
   k: Alt+F4
   l: [SYM]
