@@ -80,22 +80,22 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        kp_bL: SYM_bracket_squareB_L {
+        kp_bL: SYM_bracket_angB_L {
             compatible = "zmk,behavior-mod-morph";
-            label = "SYM_BSBL";
+            label = "SYM_BSABl";
             #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp LBKT>;
+            bindings = <&kp LPAR>, <&kp LT>;
 
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
-        kp_bR: SYM_bracket_squareB_R {
+        kp_bR: SYM_bracket_angB_R {
             compatible = "zmk,behavior-mod-morph";
-            label = "SYM_BSBR";
+            label = "SYM_BSABr";
             #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp RBKT>;
+            bindings = <&kp RPAR>, <&kp GT>;
 
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         kp_pm: SYM_plus_mult {
@@ -166,10 +166,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp ESC   &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                    &none    &none  &none  &none  &none  &kp DEL
-&trans    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10                   &none    &none  &none  &none  &none  &none
-&kp RALT  &trans  &none   &none   &kp F11  &kp F12                   &none    &none  &none  &none  &none  &none 
-                  &trans  &trans  &trans   &trans   &none    &trans  &kp RET                       &none
+&kp ESC   &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                    &none    &none  &none  &kp LBKT  &kp RBKT  &kp DEL
+&trans    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10                   &none    &none  &none  &kp_bL    &kp_bR    &none
+&kp RALT  &trans  &none   &none   &kp F11  &kp F12                   &none    &none  &none  &none     &kp_slsh  &none
+                  &trans  &trans  &trans   &trans   &none    &trans  &kp RET                          &none
             >;
         };
 
