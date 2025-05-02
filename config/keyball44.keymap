@@ -89,7 +89,7 @@
             label = "SYM_BSABr";
             #binding-cells = <0>;
             bindings = <&kp RPAR>, <&kp GT>;
-            mods = <(MOD_LSFT)>;    	    kj
+            mods = <(MOD_LSFT)>;
         };
 
         kp_pm: SYM_plus_mult {
