@@ -59,7 +59,7 @@
             bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
- jjkmkmkmkml,ol,;.'!nm,;hjml;hjk
+
         kp_eq: SYM_excl_ques {
             compatible = "zmk,behavior-mod-morph";
             label = "SYM_EQ";
