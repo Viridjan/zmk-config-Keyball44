@@ -36,7 +36,7 @@ layers:
   - M
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - '&kp_eq'
+  - {t: '!', s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-tab$$
   - LGUI
@@ -81,7 +81,7 @@ layers:
   - M
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - '&kp_eq'
+  - {t: '!', s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-tab$$
   - LGUI
