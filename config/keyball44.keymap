@@ -1,9 +1,8 @@
 #define QWERT  0
-#define GAME   1
-#define NUM    2
-#define SYM    3
-#define EXP    4
-#define RESET  5
+#define NUM    1
+#define SYM    2
+#define EXP    3
+#define RESET  4
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
@@ -129,20 +128,10 @@
         default_layer {
             label = "QWERT";
             bindings = <
-&kp GRAVE  &kp Q       &kp W       &kp E        &kp R        &kp T                          &kp Y   &kp U        &kp I        &kp O       &kp P          &kp BSPC
-&kp LCTRL  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G                          &kp H   &mt LSHFT J  &mt LCTRL K  &mt LALT L  &mt LGUI SEMI  &kp APOS
-&kp LALT   &kp LSHFT   &kp Z       &kp X        &kp C        &kp V                          &kp B   &kp N        &kp M        &kp_cs      &kp_pc         &kp_eq
-                       &none       &kp TAB      &kp LGUI     &mo SYM  &kp SPACE    &mo EXP  &td_sn                                        &to GAME
-            >;
-        };
-
-        game_layer {
-            label = "GAME";
-            bindings = <
-&kp ESC    &kp Q      &kp W  &kp E    &kp R     &kp T                          &kp Y   &kp U  &kp I  &kp O   &kp P      &kp BACKSPACE
-&kp LCTRL  &kp A      &kp S  &kp D    &kp F     &kp G                          &kp H   &kp J  &kp K  &kp L   &kp SEMI   &kp APOS
-&kp LALT   &kp LSHFT  &kp Z  &kp X    &kp C     &kp V                          &kp B   &kp N  &kp M  &kp_cs  &kp_pc     &kp_eq
-                      &none  &kp TAB  &kp LGUI  &mo SYM  &kp SPACE    &mo EXP  &td_sn                        &to QWERT
+&kp GRAVE  &kp Q      &kp W  &kp E    &kp R     &kp T                          &kp Y   &kp U  &kp I  &kp O  &kp P     &kp BSPC
+&kp LCTRL  &kp A      &kp S  &kp D    &kp F     &kp G                          &kp H   &kp J  &kp K  &kp L  &kp SEMI  &kp APOS
+&kp LALT   &kp LSHFT  &kp Z  &kp X    &kp C     &kp V                          &kp B   &kp N  &kp M  &kp_cs &kp_pc    &kp_eq
+                      &none  &kp TAB  &kp LGUI  &mo SYM  &kp SPACE    &mo EXP  &td_sn                       &none
             >;
         };
 
@@ -172,7 +161,7 @@
 &kp ESC  &none   &none   &none   &none   &none                        &none     &none       &kp PG_DN     &kp PG_UP     &none       &kp DEL
 &trans   &none   &none   &none   &none   &none                        &none     &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT   &none
 &trans   &trans  &none   &none   &none   &none                        &kp C_PP  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &none
-                 &trans  &trans  &trans  &trans  &mkp RCLK    &trans  &kp RET                                           &trans
+                 &trans  &trans  &trans  &trans  &mkp RCLK    &trans  &kp RET                                           &none
             >;
         };
 
