@@ -43,14 +43,6 @@
             bindings = <&lt NUM SPACE>;
         };
 
-        td0: TD_none_gui {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NONE_GUI";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&none>, <&kp space>;
-        };
-
         kp_cs: SYM_comma_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMI";
