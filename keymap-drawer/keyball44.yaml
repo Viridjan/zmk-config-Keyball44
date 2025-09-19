@@ -39,7 +39,7 @@ layers:
   - {t: '!', s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-tab$$
-  - LGUI
+  - '&kp_ng'
   - SYM
   - $$mdi:keyboard-space$$
   - EXP
