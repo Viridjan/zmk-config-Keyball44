@@ -173,7 +173,7 @@
         reset_layer {
             label = "RESET";
             bindings = <
-&kp K_UNDO   &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none        &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &none        &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &bootloader  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &bootloader
                     &none  &none  &none  &none  &none    &none  &none                       &none
