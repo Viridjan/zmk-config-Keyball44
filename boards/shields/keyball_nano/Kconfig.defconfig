@@ -1,7 +1,7 @@
 if SHIELD_KEYBALL44_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "p40v2"
+	default "Keyball44"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
